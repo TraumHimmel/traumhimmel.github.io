@@ -56,7 +56,7 @@
           <a
             v-for="social in page.social"
             :key="social.url"
-            class="link"
+            class="link h-6 fill-current text-gray-600 hover:text-green-700"
             :href="social.url"
             :data-tippy-content="social.name"
             v-html="social.logo"
