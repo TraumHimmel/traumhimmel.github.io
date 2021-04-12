@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'traumhimmel.github.io',
+    title: 'Tetiana Skorokhod - PhD physics, Data Scientist',
     htmlAttrs: {
       lang: 'en',
     },
@@ -17,6 +17,11 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    bodyAttrs: {
+      class:
+        'font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover',
+      style: "background-image: url('https://source.unsplash.com/1L71sPT5XKc')",
+    },
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -34,6 +39,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxt/content',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
