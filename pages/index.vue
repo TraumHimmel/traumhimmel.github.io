@@ -11,7 +11,7 @@
         <!-- Image for mobile view-->
         <div
           class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
-          style="background-image: url('/photo.jpg')"
+          style="background-image: url('~/assets/photo.jpg')"
         ></div>
 
         <h1 class="text-3xl font-bold pt-8 lg:pt-0">{{ page.name }}</h1>
@@ -72,7 +72,7 @@
     <div class="w-full lg:w-2/5">
       <!-- Big profile image for side bar (desktop) -->
       <img
-        src="/photo.jpg"
+        src="~/assets/photo.jpg"
         class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
       />
     </div>
@@ -98,7 +98,7 @@ export default {
           property: 'og:title',
           content: title,
         },
-        { property: 'og:image', content: '/mini_photo.jpg' },
+        { property: 'og:image', content: require('~/assets/mini_photo.jpeg') },
         { property: 'og:image:width', content: '627' },
         { property: 'og:image:height', content: '834' },
         { property: 'og:description', content: this.page.about },
