@@ -92,7 +92,7 @@ export default {
   head() {
     const title = `${this.page.name} - ${this.page.position}`
     return {
-      title,s
+      title,
       meta: [
         {
           property: 'og:title',
