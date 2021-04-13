@@ -89,6 +89,29 @@ export default {
       page,
     }
   },
+  head() {
+    const title = `${this.page.name} - ${this.page.position}`
+    return {
+      title,s
+      meta: [
+        {
+          property: 'og:title',
+          content: title,
+        },
+        { property: 'og:image', content: '/mini_photo.jpg' },
+        { property: 'og:image:width', content: '627' },
+        { property: 'og:image:height', content: '834' },
+        { property: 'og:description', content: this.page.about },
+        { hid: 'description', name: 'description', content: this.page.about },
+      ],
+      bodyAttrs: {
+        class:
+          'font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover',
+        style:
+          "background-image: url('https://source.unsplash.com/1L71sPT5XKc')",
+      },
+    }
+  },
   mounted() {
     tippy('.link', {
       placement: 'bottom',

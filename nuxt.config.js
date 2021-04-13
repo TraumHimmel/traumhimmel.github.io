@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Tetiana Skorokhod - PhD physics, Data Scientist',
+    title: 'Tetiana Skorokhod',
     htmlAttrs: {
       lang: 'en',
     },
@@ -17,11 +17,6 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    bodyAttrs: {
-      class:
-        'font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover',
-      style: "background-image: url('https://source.unsplash.com/1L71sPT5XKc')",
-    },
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
